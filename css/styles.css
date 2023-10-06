@@ -557,7 +557,7 @@ ul.quick-links li a:hover {
     position: relative;
     z-index: 111;
     background: #05070d;
-    background-image: url("./images/bg-hero.png") !important;
+    background-image: url("/images/bg-hero.png") !important;
     background-repeat: no-repeat;
     background-position: left bottom;
   }
@@ -574,7 +574,7 @@ ul.quick-links li a:hover {
     z-index: -1;
   }
   .arrow-bg {
-    background-image: url("./images/bg-arrow.png");
+    background-image: url("/images/bg-arrow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

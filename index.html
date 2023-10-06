@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/rational-display.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -28,7 +29,7 @@
           items: 3, // Display three images per slide
           nav: true, // Show navigation arrows
           loop: true, // Enable infinite loop
-          //   margin: 20, // Add spacing between images
+          margin: 20, // Add spacing between images
           responsive: {
             0: {
               items: 1, // On small screens, show one image per slide
@@ -65,62 +66,68 @@
     <title>Paytron</title>
   </head>
   <body>
-    <div class="hero-container">
-      <header class="navbar navbar-expand-lg justify-content-center">
-        <div class="nav-bb container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./images/header-logo.png" alt="Logo" />
-          </a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="btn-common" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn-border" href="#">Sign Up</a>
-              </li>
-            </ul>
+    <div class="hero-bg">
+      <div class="hero-container">
+        <header class="navbar navbar-expand-lg justify-content-center">
+          <div class="nav-bb container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./images/header-logo.png" alt="Logo" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="btn-common" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn-border" href="#">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="title-container">
+          <div class="title text-center">
+            <h1>Where brands and creators, To</h1>
+            <h1>collaborate & earn more money</h1>
           </div>
         </div>
-      </header>
-      <div class="title-container">
-        <div class="title text-center mt-4">
-          <h1>Where brands and creators, To</h1>
-          <h1>collaborate & earn more money</h1>
+        <div class="subtitle-container">
+          <div class="subtitle text-center">
+            <p>
+              Lorem ipsum dolor sit at amet,
+              <span class="highlighted-text"
+                >Consectetur adipiscing elit, Cras aliquet</span
+              >
+              placerat elementum. Sed
+            </p>
+            <p>
+              aliquam tortor at dolor malesuada ultrices. Quisque lorem aliquam
+              tortor at lorem.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="subtitle-container">
-        <div class="subtitle text-center mt-4">
-          <p>
-            Lorem ipsum dolor sit at amet,
-            <span class="highlighted-text"
-              >Consectetur adipiscing elit, Cras aliquet</span
-            >
-            placerat elementum. Sed
-          </p>
-          <p>
-            aliquam tortor at dolor malesuada ultrices. Quisque lorem aliquam
-            tortor at lorem.
-          </p>
+        <!-- Add the "Get Started" button here -->
+        <div class="button-container">
+          <a class="btn-common" href="#">Get Started</a>
         </div>
-      </div>
-      <!-- Add the "Get Started" button here -->
-      <div class="button-container text-center">
-        <a class="btn-common" href="#">Get Started</a>
-      </div>
-      <!-- Add the hero image below -->
-      <div class="arrow-bg"></div>
-      <div class="row dashboard-container justify-content-center">
-        <img src="./images/dashboard.png" alt="Hero Image" class="img-fluid" />
+        <!-- Add the hero image below -->
+        <div class="arrow-bg"></div>
+        <div class="row dashboard-container justify-content-center">
+          <img
+            src="./images/dashboard.png"
+            alt="Hero Image"
+            class="img-fluid"
+          />
+        </div>
       </div>
     </div>
     <!-- Add the discovery section below -->
     <section class="discovery-container">
-      <div class="container text-center mt-5">
+      <div class="container text-center">
         <h2>Discover over 260,000 creators</h2>
       </div>
 
-      <div class="search-container container text-center mt-4">
+      <div class="search-container container text-center">
         <div class="search-bar input-group mb-3">
           <span class="input-group-text">
             <img src="./images/icons/search.png" alt="" />
@@ -157,7 +164,7 @@
             <img src="./images/card1.png" alt="Image 1" />
           </div>
           <div class="card-body">
-            <h5 class="card-title">Benefit 1</h5>
+            <h5 class="card-title">Benefits 1</h5>
             <p class="card-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
@@ -168,7 +175,7 @@
             <img src="./images/card2.png" alt="Image 1" />
           </div>
           <div class="card-body">
-            <h5 class="card-title">Benefit 2</h5>
+            <h5 class="card-title">Benefits 2</h5>
             <p class="card-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
@@ -179,7 +186,7 @@
             <img src="./images/card3.png" alt="Image 1" />
           </div>
           <div class="card-body">
-            <h5 class="card-title">Benefit 3</h5>
+            <h5 class="card-title">Benefits 3</h5>
             <p class="card-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
@@ -191,13 +198,13 @@
     </section>
 
     <section class="features-container">
-      <div class="container text-center">
+      <div class="brands-text container text-center">
         <h2>Featured in</h2>
       </div>
 
       <!-- First Row: Five Logos -->
-      <div class="container text-center mt-4">
-        <div class="row justify-content-center">
+      <div class="container text-center">
+        <div class="brands-one row">
           <div class="brand col-6 col-md-2">
             <img
               src="./images/featured/Insider-logo.png"
@@ -237,8 +244,8 @@
       </div>
 
       <!-- Second Row: Four Logos -->
-      <div class="container text-center mt-5">
-        <div class="row justify-content-center">
+      <div class="brands-two container text-center">
+        <div class="brands-two-container row">
           <div class="brand col-6 col-md-2">
             <img
               src="./images/featured/Insider-logo.png"
@@ -262,7 +269,7 @@
           </div>
           <div class="brand col-6 col-md-2">
             <img
-              src="/images/featured/Insider-logo.png"
+              src="./images/featured/USA-logo.png"
               alt="Brand 9"
               class="img-fluid"
             />
@@ -336,13 +343,17 @@
         </div>
       </div>
     </section>
-    <section class="additional-info-container">
+    <section class="tip-info-container">
       <div class="container-fluid">
         <div class="row">
           <!-- Content Section -->
           <div class="col-md-6">
             <div class="additional-info-content">
-              <img src="./images/money-send-.png" alt="Icon" class="img-fluid" />
+              <img
+                src="./images/money-send-.png"
+                alt="Icon"
+                class="img-fluid"
+              />
               <h2>
                 Tip for Favorite <br />
                 Creator
@@ -354,12 +365,14 @@
                 ultrices. <br />
                 Quisque lorem lorem
               </p>
-              <a href="#" class="btn-additional">Get Started</a>
+              <div class="additional-btn">
+                <a href="#" class="btn-additional">Get Started</a>
+              </div>
             </div>
           </div>
 
           <!-- Image Section -->
-          <div class="col-md-6">
+          <div class="col-md-6 additional-image">
             <img
               src="./images/money.png"
               alt="Tip Creator Image"
@@ -395,7 +408,9 @@
                 ultrices.<br />
                 Quisque lorem lorem
               </p>
-              <a href="#" class="btn-additional">Get Started</a>
+              <div class="additional-btn">
+                <a href="#" class="btn-additional">Get Started</a>
+              </div>
             </div>
           </div>
         </div>
@@ -426,7 +441,9 @@
                 ultrices.<br />
                 Quisque lorem lorem
               </p>
-              <a href="#" class="btn-additional">Get Started</a>
+              <div class="additional-btn">
+                <a href="#" class="btn-additional">Get Started</a>
+              </div>
             </div>
           </div>
         </div>
@@ -447,7 +464,7 @@
           <div class="col-md-6">
             <div class="additional-info-content">
               <img
-                src="/images/wallet-money.png"
+                src="./images/wallet-money.png"
                 alt="Icon"
                 class="img-fluid"
               />
@@ -462,7 +479,9 @@
                 ultrices.<br />
                 Quisque lorem lorem
               </p>
-              <a href="#" class="btn-additional">Get Started</a>
+              <div class="additional-btn">
+                <a href="#" class="btn-additional">Get Started</a>
+              </div>
             </div>
           </div>
         </div>
@@ -550,69 +569,73 @@
     </section>
 
     <!-- Footer Section -->
-    <footer
-      class="footer-section"
-      style="
-        background-image: url(./images/footer-bg.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      "
-    >
-      <div class="container-fluid">
-        <div class="row">
-          <!-- Logo Section -->
-          <div class="col-md-6">
-            <div class="logo">
-              <img
-                src="./images/footer-logo.png"
-                alt="Footer Logo"
-                class="img-fluid"
-              />
+    <div class="footer-container">
+      <footer
+        class="footer-section"
+        style="
+          background-image: url(./images/footer-bg.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Logo Section -->
+            <div class="col-md-6">
+              <div class="logo">
+                <img
+                  src="./images/footer-logo.png"
+                  alt="Footer Logo"
+                  class="img-fluid"
+                />
+              </div>
+              <!-- Social Icons -->
+              <div class="social-icons">
+                <a href="#"><img src="./images/icons/youtube.png" alt="" /></a>
+                <a href="#"><img src="./images/icons/twitter.png" alt="" /></a>
+                <a href="#"><img src="./images/icons/facebook.png" alt="" /></a>
+                <a href="#"
+                  ><img src="./images/icons/instagram.png" alt=""
+                /></a>
+              </div>
             </div>
-            <!-- Social Icons -->
-            <div class="social-icons">
-              <a href="#"><img src="./images/icons/youtube.png" alt="" /></a>
-              <a href="#"><img src="./images/icons/twitter.png" alt="" /></a>
-              <a href="#"><img src="./images/icons/facebook.png" alt="" /></a>
-              <a href="#"><img src="./images/icons/instagram.png" alt="" /></a>
+
+            <!-- Quick Links Section -->
+            <div class="quick col-md-3">
+              <h4>Quick links</h4>
+              <ul class="quick-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="col-md-3">
+              <h4 class="text-left">Contact Us</h4>
+              <div class="contact-info">
+                <p>
+                  <img src="./images/icons/location.png" alt="" /> New York, US
+                </p>
+                <p>
+                  <img src="./images/icons/telephone.png" alt="" /> +44 555 5555
+                  5555
+                </p>
+                <p><img src="./images/icons/email.png" alt="" /> info@.com</p>
+              </div>
             </div>
           </div>
 
-          <!-- Quick Links Section -->
-          <div class="quick col-md-3">
-            <h4>Quick links</h4>
-            <ul class="quick-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Benefits</a></li>
-              <li><a href="#">Reviews</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact Us Section -->
-          <div class="col-md-3">
-            <h4 class="text-left">Contact Us</h4>
-            <div class="contact-info">
-              <p>
-                <img src="./images/icons/location.png" alt="" />  New York, US
-              </p>
-              <p>
-                <img src="./images/icons/telephone.png" alt="" />  +44 555 5555
-                5555
-              </p>
-              <p><img src="./images/icons/email.png" alt="" />  info@.com</p>
+          <!-- Copyright Text -->
+          <div class="copyright row">
+            <div class="col-md-12 text-center">
+              <p>&#169; 2023 All Rights Reserved</p>
             </div>
           </div>
         </div>
-
-        <!-- Copyright Text -->
-        <div class="copyright row">
-          <div class="col-md-12 text-center">
-            <p>&#169; 2023 All Rights Reserved</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

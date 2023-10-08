@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/rational-display.css" />
+    <script type="text/javascript" src="./js/custom.js"></script>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -23,6 +24,8 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script>
       $(document).ready(function () {
         $(".benefits-slider .owl-carousel").owlCarousel({
@@ -71,7 +74,7 @@
         <header class="navbar navbar-expand-lg justify-content-center">
           <div class="nav-bb container-fluid">
             <a class="navbar-brand" href="#">
-              <img src="./images/header-logo.png" alt="Logo" />
+              <img src="./images/header-logo.svg" alt="Logo" />
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
@@ -161,7 +164,7 @@
       <div class="owl-carousel owl-theme">
         <div class="item">
           <div class="item-image">
-            <img src="./images/card1.png" alt="Image 1" />
+            <img src="./images/card1.svg" alt="Image 1" />
           </div>
           <div class="card-body">
             <h5 class="card-title">Benefits 1</h5>
@@ -388,11 +391,22 @@
         <div class="row">
           <!-- Image Section -->
           <div class="col-md-6">
-            <img
+            <div class="h-full bg-[#f5f6fa] linear-graph-container">
+              <div class="w-full max-w-2xl mx-auto linear-graph-sub-container">
+                <div class="rounded-md shadow p-3 sm:p-5 linear-graph">
+                  <p class="text-base font-semibold text-[#351b5c] mb-3">
+                    Performance Analysis
+                  </p>
+
+                  <canvas id="line-chart" class="w-full"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- <img
               src="./images/graphs.png"
               alt="Tip Creator Image"
               class="img-fluid"
-            />
+            /> -->
           </div>
           <!-- Content Section -->
           <div class="col-md-6">
@@ -418,14 +432,82 @@
     </section>
     <section class="additional-info-container">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row social-stats-container">
           <!-- Image Section -->
-          <div class="col-md-6">
-            <img
+          <div class="col-md-4">
+            <div class="container social-stats">
+              <!-- Instagram -->
+              <div class="row stat-item">
+                <div class="col-md-12">
+                  <div class="title">Title</div>
+                  <div class="subtitle">
+                    Every large design company whether <br />
+                    it’s a multi-national branding.
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="range-container">
+                    <div class="range-item">
+                      <div class="range-title">Instagram</div>
+                      <div class="instagram-range-score">65,376</div>
+                    </div>
+                    <div class="instagram-progress-container">
+                      <div class="instagram-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Facebook -->
+              <div class="row stat-item mt-4">
+                <div class="col-md-12">
+                  <div class="facebook-range-container">
+                    <div class="range-item">
+                      <div class="range-title">Facebook</div>
+                      <div class="facebook-range-score">12,109</div>
+                    </div>
+                    <div class="facebook-progress-container">
+                      <div class="facebook-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Twitter -->
+              <div class="row stat-item mt-4">
+                <div class="col-md-12">
+                  <div class="twitter-range-container">
+                    <div class="range-item">
+                      <div class="range-title">Twitter</div>
+                      <div class="twitter-range-score">12,109</div>
+                    </div>
+                    <div class="twitter-progress-container">
+                      <div class="twitter-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Behance -->
+              <div class="row stat-item mt-4">
+                <div class="col-md-12">
+                  <div class="bihance-range-container">
+                    <div class="range-item">
+                      <div class="range-title">Bihance</div>
+                      <div class="bihance-range-score">12,109</div>
+                    </div>
+                    <div class="bihance-progress-container">
+                      <div class="bihance-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <img
               src="./images/percentage.png"
               alt="Tip Creator Image"
               class="img-fluid"
-            />
+            /> -->
           </div>
           <!-- Content Section -->
           <div class="col-md-6">
@@ -585,18 +667,18 @@
             <div class="col-md-6">
               <div class="logo">
                 <img
-                  src="./images/footer-logo.png"
+                  src="./images/footer-logo.svg"
                   alt="Footer Logo"
                   class="img-fluid"
                 />
               </div>
               <!-- Social Icons -->
               <div class="social-icons">
-                <a href="#"><img src="./images/icons/youtube.png" alt="" /></a>
-                <a href="#"><img src="./images/icons/twitter.png" alt="" /></a>
-                <a href="#"><img src="./images/icons/facebook.png" alt="" /></a>
+                <a href="#"><img src="./images/icons/youtube.svg" alt="" /></a>
+                <a href="#"><img src="./images/icons/twitter.svg" alt="" /></a>
+                <a href="#"><img src="./images/icons/facebook.svg" alt="" /></a>
                 <a href="#"
-                  ><img src="./images/icons/instagram.png" alt=""
+                  ><img src="./images/icons/instagram.svg" alt=""
                 /></a>
               </div>
             </div>
@@ -617,13 +699,13 @@
               <h4 class="text-left">Contact Us</h4>
               <div class="contact-info">
                 <p>
-                  <img src="./images/icons/location.png" alt="" /> New York, US
+                  <img src="./images/icons/location.svg" alt="" /> New York, US
                 </p>
                 <p>
-                  <img src="./images/icons/telephone.png" alt="" /> +44 555 5555
+                  <img src="./images/icons/telephone.svg" alt="" /> +44 555 5555
                   5555
                 </p>
-                <p><img src="./images/icons/email.png" alt="" /> info@.com</p>
+                <p><img src="./images/icons/email.svg" alt="" /> info@.com</p>
               </div>
             </div>
           </div>

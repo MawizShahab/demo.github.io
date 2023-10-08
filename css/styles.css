@@ -17,7 +17,14 @@ body {
 }
 
 .hero-container {
-  padding: 90px 100px 30px 100px;
+  padding: 70px 80px 30px 80px;
+}
+
+.hero-container {
+  z-index: 111;
+  background-image: url("../images/header-bg.png") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 section.map-container {
@@ -240,12 +247,49 @@ section.benefits-slider {
   letter-spacing: -0.28px;
 }
 
-button.owl-prev span,
-button.owl-next span {
-  padding: 10px 18px;
+.benefits-slider button.owl-prev span,
+.benefits-slider button.owl-next span {
+  width: 50px;
+  height: 50px;
+  display: block;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 15px;
-  font-size: 22px;
+  font-size: 0px;
+  background: #fff;
+}
+
+.reviews-container button.owl-prev span,
+.reviews-container button.owl-next span {
+  width: 80px;
+  height: 40px;
+  display: block;
+  font-size: 0px;
+  border-radius: 25px;
+  background: #fa9f3c;
+}
+
+.benefits-slider button.owl-next span,
+.benefits-slider button.owl-prev span,
+.reviews-container button.owl-next span,
+.reviews-container button.owl-prev span {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.benefits-slider button.owl-next span {
+  background-image: url("../images/next-arrow-black.svg") !important;
+}
+
+.benefits-slider button.owl-prev span {
+  background-image: url("../images/prev-arrow-black.svg") !important;
+}
+
+.reviews-container button.owl-next span {
+  background-image: url("../images/next-arrow-white.svg") !important;
+}
+
+.reviews-container button.owl-prev span {
+  background-image: url("../images/prev-arrow-white.svg") !important;
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background: none !important;
@@ -357,7 +401,7 @@ section.additional-info-container {
 }
 
 section.tip-info-container {
-  padding: 189px 0px 114px 100px;
+  padding: 70px 0px 0px 80px;
 }
 
 .additional-image {
@@ -385,6 +429,24 @@ section.tip-info-container {
 .additional-btn {
   display: flex;
   justify-content: flex-start;
+}
+
+.linear-graph-sub-container {
+  padding: 70px 40px 0 0;
+}
+
+.linear-graph {
+  border-radius: 12px;
+  background: var(--green-g-700, #24394f) !important;
+  box-shadow: 0px 2px 48px 0px rgba(147, 129, 255, 0.1) !important;
+}
+
+.linear-graph p {
+  color: var(--Body, #fefbf6);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 section.graph.additional-info-container {
@@ -537,6 +599,7 @@ ul.quick-links li a:hover {
   display: flex;
   flex-direction: row;
   gap: 8px;
+  align-items: center;
 }
 
 .copyright {
@@ -581,7 +644,25 @@ ul.quick-links li a:hover {
     display: block;
     width: 100%;
     height: 70px;
-    margin: 25px 0 25px -160px;
+    margin: 0 0 25px -160px;
+  }
+
+  .benefits-slider .owl-carousel {
+    position: relative;
+  }
+
+  .benefits-slider button.owl-prev,
+  .benefits-slider button.owl-next {
+    position: absolute;
+    top: 35%;
+  }
+
+  .benefits-slider button.owl-prev {
+    left: -30px;
+  }
+
+  .benefits-slider button.owl-next {
+    right: -30px;
   }
 }
 
@@ -759,4 +840,388 @@ ul.quick-links li a:hover {
   section.graph.additional-info-container {
     padding: 50px 50px 50px 50px !important;
   }
+}
+
+/* Support Screen Design */
+
+.support-section {
+  background: #05070d;
+  padding: 100px;
+  /* height: 100vh; */
+}
+
+.verified-section {
+  background-image: url(../images/bg-support.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+  /* padding: 88px 0 0 100px !important; */
+}
+
+.verified-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+img.verified-header-logo {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  max-width: 15%;
+}
+
+.verified-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.support-section .name {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin: 0;
+}
+
+.designation {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-align: center;
+  margin: 10px 0 12px 0;
+}
+
+.verified-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.support-form-container,
+.payment-form-container {
+  padding: 200px 50px 200px 50px !important;
+  background: #fff;
+}
+
+.support-form-container h2,
+.payment-form-container h2 {
+  color: var(--black, #000);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  margin: 0;
+}
+
+.support-form-container p,
+.payment-form-container p {
+  color: var(--zinc-500, #71717a);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 9px 0 31px 0;
+}
+
+form.support-form label {
+  color: var(--black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+form.support-form .name-field {
+  margin-bottom: 23px;
+}
+
+form.support-form .amount-field {
+  margin-bottom: 16px !important;
+}
+
+form.support-form input {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.06);
+  padding: 19px 0 19px 21px;
+  height: 60px;
+  width: 400px;
+  border: 0;
+}
+
+form.support-form input::placeholder {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form.support-form input:active,
+form.support-form input:focus {
+  box-shadow: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.btn-counter-container {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 25px !important;
+}
+
+button.btn-counter {
+  padding: 17px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.09);
+  border: 0;
+  color: var(--black, #000);
+  /* font-family: Rational Display; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+button.btn-counter:hover {
+  background: var(--O, #fa9f3c);
+  color: #fff;
+}
+
+button.btn-submit {
+  padding: 19px 43px;
+  border-radius: 15px;
+  background: var(--O, #fa9f3c);
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  border: 0;
+}
+
+button.btn-counter:focus,
+button.btn-submit:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .support-section {
+    padding: 0;
+  }
+
+  .verified-section {
+    padding: 100px 0;
+  }
+
+  .support-form-container {
+    padding: 100px 25px 100px 25px !important;
+  }
+  .support-form-container h2 {
+    font-size: 25px;
+  }
+
+  .btn-counter-container {
+    flex-wrap: wrap;
+  }
+
+  button.btn-counter {
+    padding: 10px;
+    font-size: 14px;
+  }
+  form.support-form input {
+    width: 100%;
+  }
+
+  .linear-graph-sub-container {
+    padding: 0;
+  }
+
+  .range-item,
+  .instagram-progress-container,
+  .facebook-progress-container,
+  .twitter-progress-container,
+  .bihance-progress-container {
+    width: 100% !important;
+  }
+}
+
+/* Payment Screen design */
+
+/* .payment-form-container .payment-option-text {
+  color: var(--black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0 20px 0;
+}
+
+.payment-methods {
+  padding: 0 !important;
+  margin-bottom: 40px;
+}
+
+.radio-container {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+} */
+
+/* label.radio-button {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 15px 18px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+} */
+
+/* Custom CSS for radio buttons */
+/* .radio-button input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #c7862e;
+} */
+
+.social-stats-container {
+  justify-content: space-around;
+}
+.social-stats {
+  margin-top: 20px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.range-item {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.instagram-progress-container,
+.facebook-progress-container,
+.twitter-progress-container,
+.bihance-progress-container {
+  height: 8px;
+  width: 70%;
+  border-radius: 4px;
+  position: relative;
+}
+
+.instagram-progress-container {
+  background: var(--colors-action-warning, #fff5cc);
+}
+
+.facebook-progress-container {
+  background: #dad7fe;
+}
+
+.twitter-progress-container {
+  background-color: #b4cad8;
+}
+
+.bihance-progress-container {
+  background: #ffe5d3;
+}
+
+.instagram-bar,
+.facebook-bar,
+.twitter-bar,
+.bihance-bar {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.instagram-bar {
+  background: var(--colors-action-warning, #ffb200) !important;
+  width: 70%;
+}
+
+.facebook-bar {
+  background: #4339f2;
+  width: 50%;
+}
+
+.twitter-bar {
+  background: #02a0fc !important;
+  width: 90%;
+}
+
+.bihance-bar {
+  background: #ff3a29;
+  width: 50%;
+}
+
+/* You can define your custom styles for titles and subtitles here */
+.social-stats .title {
+  color: var(--colors-black-100, #000);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.social-stats .subtitle {
+  color: var(--colors-black-100, #000);
+  opacity: 0.4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  margin-bottom: 17px;
+}
+
+.range-title {
+  color: var(--colors-black-100, #000);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.instagram-range-score,
+.facebook-range-score,
+.twitter-range-score,
+.bihance-range-score {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.instagram-range-score {
+  color: var(--colors-action-warning, #ffb200);
+}
+
+.facebook-range-score {
+  color: #4339f2 !important;
+}
+
+.twitter-range-score {
+  color: #02a0fc;
+}
+
+.bihance-range-score {
+  color: #ff3a29;
 }

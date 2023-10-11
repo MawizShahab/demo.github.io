@@ -22,7 +22,7 @@ body {
 
 .hero-container {
   z-index: 111;
-  background-image: url("/images/header-bg.png") !important;
+  background-image: url("../images/header-bg.png") !important;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -277,19 +277,19 @@ section.benefits-slider {
 }
 
 .benefits-slider button.owl-next span {
-  background-image: url("/images/next-arrow-black.svg") !important;
+  background-image: url("../images/next-arrow-black.svg") !important;
 }
 
 .benefits-slider button.owl-prev span {
-  background-image: url("/images/prev-arrow-black.svg") !important;
+  background-image: url("../images/prev-arrow-black.svg") !important;
 }
 
 .reviews-container button.owl-next span {
-  background-image: url("/images/next-arrow-white.svg") !important;
+  background-image: url("../images/next-arrow-white.svg") !important;
 }
 
 .reviews-container button.owl-prev span {
-  background-image: url("/images/prev-arrow-white.svg") !important;
+  background-image: url("../images/prev-arrow-white.svg") !important;
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background: none !important;
@@ -709,7 +709,7 @@ ul.quick-links li a:hover {
     position: relative;
     z-index: 111;
     background: #05070d;
-    background-image: url("/images/bg-hero.png") !important;
+    background-image: url("../images/bg-hero.png") !important;
     background-repeat: no-repeat;
     background-position: left bottom;
   }
@@ -726,7 +726,7 @@ ul.quick-links li a:hover {
     z-index: -1;
   }
   .arrow-bg {
-    background-image: url("/images/bg-arrow.png");
+    background-image: url("../images/bg-arrow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -989,7 +989,7 @@ ul.quick-links li a:hover {
 }
 
 .verified-section {
-  background-image: url(/images/bg-support.png);
+  background-image: url(../images/bg-support.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

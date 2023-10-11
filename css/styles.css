@@ -22,7 +22,7 @@ body {
 
 .hero-container {
   z-index: 111;
-  background-image: url("../images/header-bg.png") !important;
+  background-image: url("/images/header-bg.png") !important;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -277,19 +277,19 @@ section.benefits-slider {
 }
 
 .benefits-slider button.owl-next span {
-  background-image: url("../images/next-arrow-black.svg") !important;
+  background-image: url("/images/next-arrow-black.svg") !important;
 }
 
 .benefits-slider button.owl-prev span {
-  background-image: url("../images/prev-arrow-black.svg") !important;
+  background-image: url("/images/prev-arrow-black.svg") !important;
 }
 
 .reviews-container button.owl-next span {
-  background-image: url("../images/next-arrow-white.svg") !important;
+  background-image: url("/images/next-arrow-white.svg") !important;
 }
 
 .reviews-container button.owl-prev span {
-  background-image: url("../images/prev-arrow-white.svg") !important;
+  background-image: url("/images/prev-arrow-white.svg") !important;
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background: none !important;
@@ -308,6 +308,17 @@ section.benefits-slider {
 
 .owl-dots {
   display: none !important;
+}
+
+.features-container .brands-one p,
+.features-container .brands-two p {
+  margin: 0;
+  color: var(--black, #000);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: -0.4px;
 }
 
 .brands-text {
@@ -453,6 +464,81 @@ section.tip-info-container {
 section.graph.additional-info-container {
   background: #05070d;
   padding: 150px 100px 100px 50px !important;
+}
+
+.subscription-content {
+  position: relative;
+}
+
+.recent-tips-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.06);
+  gap: 11px;
+  width: 332px;
+  position: absolute;
+  top: -27%;
+  left: -7%;
+}
+.total-earnings {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.total-earnings .earnings span {
+  color: var(--black, #000);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.total-earnings .earnings .amount {
+  color: var(--black, #000);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.total-earnings .earnings .day {
+  color: var(--black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  text-align: left;
+}
+
+.paid-person-container {
+  border-radius: 29.5px;
+  background: var(--white, #fff);
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 289px;
+  position: absolute;
+  bottom: -18px;
+  right: 10px;
+}
+
+.notify p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  text-align: left;
 }
 
 section.subscriptions.additional-info-container {
@@ -623,7 +709,7 @@ ul.quick-links li a:hover {
     position: relative;
     z-index: 111;
     background: #05070d;
-    background-image: url("../images/bg-hero.png") !important;
+    background-image: url("/images/bg-hero.png") !important;
     background-repeat: no-repeat;
     background-position: left bottom;
   }
@@ -640,7 +726,7 @@ ul.quick-links li a:hover {
     z-index: -1;
   }
   .arrow-bg {
-    background-image: url("../images/bg-arrow.png");
+    background-image: url("/images/bg-arrow.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -686,6 +772,14 @@ ul.quick-links li a:hover {
     position: absolute;
     top: -75px;
     right: 100px;
+  }
+
+  section.subscriptions.additional-info-container {
+    padding: 180px 0 100px 100px;
+  }
+
+  section.subscriptions .additional-info-content {
+    padding: 0 !important;
   }
 }
 
@@ -863,6 +957,27 @@ ul.quick-links li a:hover {
   section.graph.additional-info-container {
     padding: 50px 50px 50px 50px !important;
   }
+
+  .recent-tips-container {
+    width: 100%;
+    position: revert;
+    margin-bottom: 20px;
+  }
+
+  .paid-person-container {
+    width: 100%;
+    position: revert;
+    margin-top: 20px;
+  }
+
+  .total-earnings .earnings .amount {
+    font-size: 18px;
+  }
+
+  .total-earnings .earnings span,
+  .total-earnings .earnings .day {
+    font-size: 14px;
+  }
 }
 
 /* Support Screen Design */
@@ -874,7 +989,7 @@ ul.quick-links li a:hover {
 }
 
 .verified-section {
-  background-image: url(../images/bg-support.png);
+  background-image: url(/images/bg-support.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1095,7 +1210,7 @@ button.btn-submit:focus {
     padding: 0 !important;
   }
 
-  .w-s.center{
+  .w-s.center {
     justify-content: center;
     align-items: center;
   }

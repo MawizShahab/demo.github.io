@@ -164,7 +164,7 @@
       <div class="owl-carousel owl-theme">
         <div class="item">
           <div class="item-image">
-            <img src="./images/card1.svg" alt="Image 1" />
+            <img src="./images/card1.png" alt="Image 1" />
           </div>
           <div class="card-body">
             <h5 class="card-title">Benefits 1</h5>
@@ -387,29 +387,79 @@
     </section>
 
     <section class="graph additional-info-container">
-      <div class="container-fluid">
-        <div class="row">
+      <div class="container-fluid w-s">
+        <div class="row w-s center">
           <!-- Image Section -->
-          <div class="col-md-6">
-            <div class="h-full bg-[#f5f6fa] linear-graph-container">
-              <div class="w-full max-w-2xl mx-auto linear-graph-sub-container">
-                <div class="rounded-md shadow p-3 sm:p-5 linear-graph">
-                  <p class="text-base font-semibold text-[#351b5c] mb-3">
-                    Performance Analysis
-                  </p>
+          <div class="row col-md-6 custom-graph-container">
+            <div class="col-md-6 custom-linear-graph">
+              <div class="h-full bg-[#f5f6fa] linear-graph-container">
+                <div
+                  class="w-full max-w-2xl mx-auto linear-graph-sub-container"
+                >
+                  <div class="rounded-md linear-graph">
+                    <div class="canvas-header">
+                      <div class="headings">
+                        <p class="text-base font-semibold text-[#351b5c] mb-3">
+                          Bloggy Analytics
+                        </p>
+                        <p class="subtitle">Check Insights</p>
+                      </div>
+                      <div class="option">
+                        <img src="./images/option.svg" alt="" />
+                      </div>
+                    </div>
 
-                  <canvas id="line-chart" class="w-full"></canvas>
+                    <canvas id="line-chart" class="w-full"></canvas>
+                    <div class="canvas-content">
+                      <div class="post">
+                        <img src="./images/post.svg" alt="" />
+                        <span>Post</span>
+                      </div>
+                      <div class="blog">
+                        <img src="./images/blog.svg" alt="" />
+                        <span>Blog</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- <img
-              src="./images/graphs.png"
-              alt="Tip Creator Image"
-              class="img-fluid"
-            /> -->
+            <div class="col-md-6 custom-range-graph">
+              <div class="h-full bg-[#f5f6fa] linear-graph-container">
+                <div
+                  class="w-full max-w-2xl mx-auto linear-graph-sub-container"
+                >
+                  <div class="rounded-md linear-graph">
+                    <div class="canvas-header">
+                      <div class="headings">
+                        <p class="text-base font-semibold text-[#351b5c] mb-3">
+                          Audience Performance
+                        </p>
+                        <p class="subtitle">Check Insights</p>
+                      </div>
+                      <div class="option">
+                        <img src="./images/option.svg" alt="" />
+                      </div>
+                    </div>
+                    <canvas id="range-chart" class="w-full"></canvas>
+                    <div class="canvas-content">
+                      <div class="post">
+                        <img src="./images/blog.svg" alt="" />
+                        <span>Weekly</span>
+                      </div>
+                      <div class="blog">
+                        <img src="./images/monthly.svg" alt="" />
+                        <span>Monthly</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <!-- Content Section -->
-          <div class="col-md-6">
+          <div class="col-md-6 additional-content-center">
             <div class="additional-info-content">
               <h2>
                 Lorem ipsum dolor sit <br />
@@ -508,9 +558,46 @@
               alt="Tip Creator Image"
               class="img-fluid"
             /> -->
+            <!-- Top Creator -->
+            <div class="row stat-item top-creator-container">
+              <div class="col-md-12 top-creator">
+                <!-- Top Creator Profile -->
+                <div class="top-creator-profile">
+                  <img src="./images/top-creator.svg" alt="" />
+                </div>
+                <div class="top-creator-info">
+                  <div class="badge">Top Creator</div>
+                  <div class="name">Lilah Ioselev</div>
+                </div>
+                <!-- Top Creator Score -->
+                <div class="top-creator-score">
+                  <div class="score-icon">
+                    <!-- <i class="fas fa-star"></i> -->
+                    <img src="./images/up-arrow.svg" alt="" />
+                  </div>
+                  <div class="score">9,876</div>
+                </div>
+              </div>
+              <div class="colmd-12 top-creator-range">
+                <!-- Instagram -->
+                <div class="row stat-item">
+                  <div class="col-md-12 range">
+                    <div class="range-container">
+                      <div class="range-item">
+                        <div class="range-title">Instagram</div>
+                        <div class="instagram-range-score">65,376</div>
+                      </div>
+                      <div class="instagram-progress-container">
+                        <div class="instagram-bar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Content Section -->
-          <div class="col-md-6">
+          <div class="col-md-6 additional-content-center">
             <div class="additional-info-content">
               <h2>
                 Lorem ipsum dolor sit <br />
@@ -664,7 +751,7 @@
         <div class="container-fluid">
           <div class="row">
             <!-- Logo Section -->
-            <div class="col-md-6">
+            <div class="col-md-8">
               <div class="logo">
                 <img
                   src="./images/footer-logo.svg"
@@ -684,7 +771,7 @@
             </div>
 
             <!-- Quick Links Section -->
-            <div class="quick col-md-3">
+            <div class="quick col-md-2">
               <h4>Quick links</h4>
               <ul class="quick-links">
                 <li><a href="#">Home</a></li>
@@ -695,7 +782,7 @@
             </div>
 
             <!-- Contact Us Section -->
-            <div class="col-md-3">
+            <div class="col-md-2">
               <h4 class="text-left">Contact Us</h4>
               <div class="contact-info">
                 <p>
@@ -718,6 +805,7 @@
           </div>
         </div>
       </footer>
+      <div class="live-chat"><img src="/images/live-chat.svg" alt="" /></div>
     </div>
   </body>
 </html>
